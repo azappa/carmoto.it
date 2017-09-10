@@ -44,7 +44,7 @@
     },
     success: function (resp) {
       if (resp && resp.length > 0) {
-        var latests = document.getElementById('latest-ones');
+        var latestContainer = document.getElementById('latest-ones');
         resp.forEach(function (el, i) {
           var thisEl = document.createElement('div');
 
