@@ -5,41 +5,8 @@ html(prefix='og: http://ogp.me/ns#')
     meta(name='viewport', content='width=device-width, initial-scale=1.0')
     title Carmoto snc di Nardin R. e G.
 
-    //-   privacy policy 
-    link(href='http://assets.cookieconsent.silktide.com/current/style.min.css', rel='stylesheet')
-    script(type='text/javascript', src='http://assets.cookieconsent.silktide.com/current/plugin.min.js')
-    script(type='text/javascript').
-      cc.initialise({
-        cookies: {
-          necessary: {
-            title: 'Cookies tecnici',
-            description: 'carmoto.it utilizza cookie di sessione per il corretto funzionamento delle pagine web e per il miglioramento dei servizi. Per saperne di più consulta la nostra Privacy Policy. Proseguendo nella navigazione di questo sito, si acconsentirà all’utilizzo dei cookie.'
-          }
-        },
-        settings: {
-          style: 'dark',
-          bannerPosition: 'bottom',
-          disableallsites: true
-        },
-        strings: {
-          necessaryDefaultTitle: 'Cookie tecnici',
-          necessaryDefaultDescription: 'Alcuni cookies su questo sito sono necessari per usufruire dei servizi e non possono essere disabilitati',
-          defaultTitle: 'Titolo dei cookie',
-          defaultDescription: 'Descrizione cookie',
-          learnMore: 'Informativa completa',
-          closeWindow: 'Chiudi finestra',
-          customCookie: 'Questo sito utilizza cookies per il funzionamento di alcune aree del sito. Per informazioni clicca sul link "Privacy Policy".',
-          notificationTitleImplicit: 'Questo sito utilizza cookies per il funzionamento di alcune aree del sito.',
-          notificationTitle: 'I cookie aiutano a fornire i propri servizi. Navigando sul sito accetti il loro utilizzo.',
-          seeDetails: 'Vedi dettagli',
-          seeDetailsImplicit: 'Cambia le tue impostazioni',
-          hideDetails: 'Nascondi dettagli',
-          allowCookies: 'Accetta e Chiudi',
-          allowCookiesImplicit: 'Chiudi',
-          savePreference: 'Salva le tue preferenze'
-        }
-      });
-
+    //-   privacy policy
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/ToX82/cookie-bar/cookiebar-latest.min.js?forceLang=it&thirdparty=1&scrolling=1&top=1&showNoConsent=1&hideDetailsBtn=1"></script>
 
     link(href='//cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/pure-min.css', rel='stylesheet')
     link(href='//cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/grids-responsive-min.css', rel='stylesheet')
