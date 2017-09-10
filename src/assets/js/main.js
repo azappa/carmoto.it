@@ -56,7 +56,7 @@
           var elModello = el.modello !== '' ? '<small>&nbsp;' + el.modello + '</small>' : '<small>&nbsp;</small>';
           var elMarca = el.marca !== '' ? '<h3>' + el.marca + elModello + '</h3>' : '<h3>' + elModello + '</h3>';
           var elNome = el.nome !== '' ? '<h5>' + el.nome + '</h5>' : '<h5>&nbsp;</h5>';
-          var elImage = el.img !== '' ? '<img src="' + el.img + '" class="pure-img" />' : '<u>foto non disponibile</u>';
+          var elImage = el.img !== '' ? '<img src="' + el.img.replace('http://', 'https://') + '" class="pure-img" />' : '<u>foto non disponibile</u>';
           var elUrl = el.url !== '' ? '<p><a href="' + el.url + '" target="_blank">Link</a></p>' : '<p><u>link non disponibile</u></p>';
 
           thisEl.innerHTML = '<div class="padding">' + elMarca + elNome + elImage + elUrl + '</div>';
