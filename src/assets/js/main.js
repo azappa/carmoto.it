@@ -33,7 +33,7 @@
 
   //  -- loading latest items from autoscout24 --
   reqwest({
-    url: 'https://5lytcix80a.execute-api.us-west-2.amazonaws.com/development/l',
+    url: 'https://jhz86wzd60.execute-api.us-west-2.amazonaws.com/staging/l',
     type: 'json',
     method: 'get',
     contentType: 'application/json',
