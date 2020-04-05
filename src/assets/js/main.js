@@ -33,14 +33,12 @@
 
   //  -- loading latest items from autoscout24 --
   reqwest({
-    url: 'https://api.carmoto.it/api/offers/',
+    url: 'https://zeit.carmoto.it/api/offers',
     type: 'json',
     method: 'get',
     contentType: 'application/json',
     crossOrigin: true,
     error: function (err) {
-      console.log(err);
-      // document.getElementById('latest').style.display = 'none';
     },
     success: function (resp) {
       /*
