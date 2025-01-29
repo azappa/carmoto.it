@@ -11,11 +11,6 @@ const uglify = require("gulp-uglify");
 const changed = require("gulp-changed");
 const filter = require("gulp-filter");
 const deploy = require("gulp-gh-pages");
-const GMAP_KEY = process.env.GMAP_KEY
-
-if (!GMAP_KEY) {
-  throw new Error('Missing valid Google Maps key!')
-}
 
 gulp.task("clean", (cb) => {
   del.sync(["./dist/"]);
